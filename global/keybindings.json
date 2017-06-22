@@ -1,0 +1,69 @@
+// 将键绑定放入此文件中以覆盖默认值
+[
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+f4",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "redo",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "-redo",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.view.git"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-workbench.action.git.input-commit"
+    },
+    {
+        "key": "alt+f10",
+        "command": "workbench.action.tasks.terminate"
+    }
+]
