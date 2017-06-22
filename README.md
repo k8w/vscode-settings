@@ -13,6 +13,9 @@
 1. 将backend/frontend下的内容复制到backend和frontend各自的.vscode目录下。
 
 ## 该配置的特性
+防止搞错环境，时刻留意底部状态栏。
+绿色的是前端，蓝色的是后端。
+联想一下，webpack-dev-server会出现一片绿，所以绿色的就是前端了。
 
 ### backend
 

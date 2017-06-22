@@ -5,5 +5,8 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/dist": true
+    },
+    "workbench.colorCustomizations":{
+        "statusBar.background": "#1b63bd"
     }
 }
