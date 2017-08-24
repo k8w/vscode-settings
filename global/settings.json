@@ -3,7 +3,6 @@
     "editor.fontSize": 18,
     "terminal.integrated.fontSize": 16,
     "window.zoomLevel": 0,
-    "typescript.tsdk": "C:/Users/longsheng/AppData/Roaming/npm/node_modules/typescript/lib",
     "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\cmd.exe",
     "editor.mouseWheelScrollSensitivity": 1.5,
     "files.autoSave": "afterDelay",
@@ -15,5 +14,6 @@
         "xml",
         "javascriptreact",
         "typescriptreact"
-    ]
+    ],
+    "tsimporter.preferRelative": true
 }

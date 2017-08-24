@@ -1,4 +1,4 @@
-// ½«¼ü°ó¶¨·ÅÈë´ËÎÄ¼þÖÐÒÔ¸²¸ÇÄ¬ÈÏÖµ
+// å°†é”®ç»‘å®šæ”¾å…¥æ­¤æ–‡ä»¶ä¸­ä»¥è¦†ç›–é»˜è®¤å€¼
 [
     {
         "key": "ctrl+shift+n",
@@ -65,5 +65,24 @@
     {
         "key": "alt+f10",
         "command": "workbench.action.tasks.terminate"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.view.search",
+        "when": "!searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-search.action.focusActiveEditor",
+        "when": "searchInputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "filesExplorer.findInFolder"
     }
 ]
