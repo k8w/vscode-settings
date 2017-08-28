@@ -84,5 +84,13 @@
     {
         "key": "ctrl+shift+f",
         "command": "filesExplorer.findInFolder"
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+k z",
+        "command": "-workbench.action.toggleZenMode"
     }
 ]
