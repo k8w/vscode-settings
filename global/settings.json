@@ -15,5 +15,7 @@
         "javascriptreact",
         "typescriptreact"
     ],
-    "tsimporter.preferRelative": true
+    "tsimporter.preferRelative": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true
 }
