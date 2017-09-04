@@ -1,5 +1,5 @@
 {
-/*
+	/*
 	// Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
@@ -41,6 +41,18 @@
 			"export interface Res${1:PtlName} extends Response {",
 			"\t$3",
 			"}"
+		]
+	},
+	"New Test Case": {
+		"prefix": "testCase",
+		"body": [
+			"import * as assert from 'assert';",
+			"",
+			"describe('class ${1:ClassName}', function () {",
+			"\tit('function ${2:FunctionName}', function () {",
+			"\t\t$3",
+			"\t})",
+			"})"
 		]
 	}
 }

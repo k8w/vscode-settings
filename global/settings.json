@@ -16,6 +16,11 @@
         "typescriptreact"
     ],
     "tsimporter.preferRelative": true,
+    "tsimporter.filesToExclude": [
+        "dist"
+    ],
+    "tsimporter.lowImportance": true,
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "zenMode.hideTabs": false
 }
