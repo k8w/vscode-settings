@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "TS Project",
+            "program": "${env:NPM_GLOBAL}/ts-node/dist/_bin.js",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "index.ts"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Current TS File",
+            "program": "${env:NPM_GLOBAL}/ts-node/dist/_bin.js",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "${relativeFile}"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "TS Project Tests",
+            "program": "${env:NPM_GLOBAL}/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}",
+            "args": [],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Current TS Tests File",
+            "program": "${env:NPM_GLOBAL}/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "${relativeFile}"
+            ]
+        }
+    ]
+}
