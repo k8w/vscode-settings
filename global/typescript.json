@@ -22,6 +22,14 @@
 			"}"
 		]
 	},
+	"New default interface": {
+		"prefix": "edi",
+		"body": [
+			"export default interface ${1:InterfaceName} {",
+			"\t$2",
+			"}"
+		]
+	},
 	"New TsRPC protocol": {
 		"prefix": "protocol",
 		"body": [
@@ -48,11 +56,16 @@
 		"body": [
 			"import * as assert from 'assert';",
 			"",
-			"describe('class ${1:ClassName}', function () {",
-			"\tit('function ${2:FunctionName}', function () {",
+			"describe('${1:ClassName}', function () {",
+			"\tit('${2:FunctionName}', function () {",
 			"\t\t$3",
 			"\t})",
 			"})"
 		]
+	},
+
+	"protocolModel": {
+		"prefix": "ptlmodel",
+		"body": "export interface Req$1 {\n    $2\n}\n\nexport interface Res$1 {\n    \n}"
 	}
 }
