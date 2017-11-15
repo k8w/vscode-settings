@@ -31,22 +31,17 @@
 		]
 	},
 	"New TsRPC protocol": {
-		"prefix": "protocol",
+		"prefix": "tsrpcptl",
 		"body": [
-			"import Protocol from \"../Protocol\";",
-			"import Request from \"../Request\";",
-			"import Response from \"../Response\";",
-			"",
-			"const Ptl${1:PtlName} = new Protocol<Req${1:PtlName},Res${1:PtlName}>(__filename, {",
-			"    needLogin: false",
-			"});",
+			"import TsRpcPtl from \"tsrpc-protocol\";\n",
+			"const Ptl${1:PtlName} = new TsRpcPtl<Req${1:PtlName},Res${1:PtlName}>(__filename);",
 			"export default Ptl${1:PtlName};",
 			"",
-			"export interface Req${1:PtlName} extends Request {",
+			"export interface Req${1:PtlName} {",
 			"\t$2",
 			"}",
 			"",
-			"export interface Res${1:PtlName} extends Response {",
+			"export interface Res${1:PtlName} {",
 			"\t$3",
 			"}"
 		]
@@ -62,10 +57,5 @@
 			"\t})",
 			"})"
 		]
-	},
-
-	"protocolModel": {
-		"prefix": "ptlmodel",
-		"body": "export interface Req$1 {\n    $2\n}\n\nexport interface Res$1 {\n    \n}"
 	}
 }
