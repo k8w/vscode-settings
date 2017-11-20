@@ -37,8 +37,8 @@
 			"}"
 		]
 	},
-	"New Component": {
-		"prefix": "comp",
+	"FullTS Component": {
+		"prefix": "fcomp",
 		"body": [
 			"import * as React from \"react\";",
 			"import { FullTsComponent } from \"fullts\";",
@@ -59,6 +59,38 @@
 			"\t\t)",
 			"\t}",
 			"}"
+		]
+	},
+	"FullTS View": {
+		"prefix": "fview",
+		"body": [
+			"import * as React from \"react\";",
+			"import { FullTsView } from \"fullts\";",
+			"import \"./${1:CompName}.less\";",
+			"",
+			"interface ${1:CompName}Props {",
+			"\t$2",
+			"}",
+			"",
+			"interface ${1:CompName}State {",
+			"\t$3",
+			"}",
+			"",
+			"export default class ${1:CompName} extends FullTsView<${1:CompName}Props, ${1:CompName}State>{",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div className=\"${1:CompName}\">$4</div>",
+			"\t\t)",
+			"\t}",
+			"}"
+		]
+	},
+	"Constructor": {
+		"prefix": "constructor",
+		"body": [
+			"constructor(props: CompName['props'], context?: any) {",
+			"\t\tsuper(props, context);",
+			"\t}"
 		]
 	}
 }

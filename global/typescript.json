@@ -30,8 +30,8 @@
 			"}"
 		]
 	},
-	"New TsRPC protocol": {
-		"prefix": "tsrpcptl",
+	"TSRPC Protocol": {
+		"prefix": "tptl",
 		"body": [
 			"import TsRpcPtl from \"tsrpc-protocol\";\n",
 			"const Ptl${1:PtlName} = new TsRpcPtl<Req${1:PtlName},Res${1:PtlName}>(__filename);",
@@ -43,6 +43,15 @@
 			"",
 			"export interface Res${1:PtlName} {",
 			"\t$3",
+			"}"
+		]
+	},
+	"TSRPC API": {
+		"prefix": "tapi",
+		"body": [
+			"import { ApiRequest, ApiResponse } from \"tsrpc\";\n",
+			"export default async function Api${1:PtlName}(req: ApiRequest<Req${1:PtlName}>, res: ApiResponse<Res${1:PtlName}>) {",
+			"\t$2",
 			"}"
 		]
 	},
