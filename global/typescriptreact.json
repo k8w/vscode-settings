@@ -85,7 +85,7 @@
 			"}"
 		]
 	},
-	"Constructor": {
+	"FullTS Constructor": {
 		"prefix": "fcon",
 		"body": [
 			"constructor(props: CompName['props'], context?: any) {",
