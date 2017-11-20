@@ -86,7 +86,7 @@
 		]
 	},
 	"Constructor": {
-		"prefix": "constructor",
+		"prefix": "fcon",
 		"body": [
 			"constructor(props: CompName['props'], context?: any) {",
 			"\t\tsuper(props, context);",
