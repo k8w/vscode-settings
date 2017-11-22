@@ -50,8 +50,8 @@
 		"prefix": "tapi",
 		"body": [
 			"import { ApiRequest, ApiResponse } from \"tsrpc\";\n",
-			"export default async function Api${1:PtlName}(req: ApiRequest<Req${1:PtlName}>, res: ApiResponse<Res${1:PtlName}>) {",
-			"\t$2",
+			"export default async function Api${1:PtlName}(req: ApiRequest<Req${1:PtlName}$2>, res: ApiResponse<Res${1:PtlName}$3>) {",
+			"\t$4",
 			"}"
 		]
 	},
@@ -66,5 +66,9 @@
 			"\t})",
 			"})"
 		]
+	},
+	"Import as": {
+		"prefix": "ias",
+		"body": "import * as $1 from \"$1\";"
 	}
 }

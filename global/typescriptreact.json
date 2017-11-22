@@ -88,8 +88,9 @@
 	"FullTS Constructor": {
 		"prefix": "fcon",
 		"body": [
-			"constructor(props: CompName['props'], context?: any) {",
+			"constructor(props: ${1:CompName}['props'], context?: any) {",
 			"\tsuper(props, context);",
+			"\tthis.state = {$2};",
 			"}"
 		]
 	}
