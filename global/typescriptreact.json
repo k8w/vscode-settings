@@ -101,5 +101,29 @@
 			"\tthis.state = {$2};",
 			"}"
 		]
+	},
+	"componentWillReceiveProps": {
+		"prefix": "fcompWRP",
+		"body": [
+			"componentWillReceiveProps(nextProps: this['props']) {",
+			"\t$1",
+			"}"
+		]
+	},
+	"componentWillUpdate": {
+		"prefix": "fcompWU",
+		"body": [
+			"componentWillUpdate(nextProps: this['props'], nextState: this['state']) {",
+			"\t$1",
+			"}"
+		]
+	},
+	"componentDidUpdate": {
+		"prefix": "fcompDU",
+		"body": [
+			"componentDidUpdate(prevProps: this['props'], prevState: this['state']) {",
+			"\t$1",
+			"}"
+		]
 	}
 }
