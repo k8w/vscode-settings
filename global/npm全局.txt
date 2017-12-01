@@ -1,0 +1,1 @@
+npm i -g typescript webpack webpack-dev-server onchange ts-node
