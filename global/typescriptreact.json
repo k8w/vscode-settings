@@ -129,5 +129,25 @@
 	"Import as": {
 		"prefix": "ias",
 		"body": "import * as $1 from \"$1\";"
+	},
+	"for 0->length": {
+		"prefix": "f0",
+		"body": [
+			"for (let i = 0; i < ${1:arr.length}; ++i){",
+			"\t$2",
+			"}"
+		]
+	},
+	"for length->0": {
+		"prefix": "f-1",
+		"body": [
+			"for (let i = ${1:arr.length}; i > -1; --i){",
+			"\t$2",
+			"}"
+		]
+	},
+	"Create Array Quickly": {
+		"prefix": "af",
+		"body": "Array.from({ length: ${1:100} }, (v, i) => ${2:i})"
 	}
 }
