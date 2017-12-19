@@ -125,5 +125,9 @@
 			"\t$1",
 			"}"
 		]
+	},
+	"Import as": {
+		"prefix": "ias",
+		"body": "import * as $1 from \"$1\";"
 	}
 }
