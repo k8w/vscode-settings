@@ -90,5 +90,9 @@
 	"Create Array Quickly": {
 		"prefix": "af",
 		"body": "Array.from({ length: ${1:100} }, (v, i) => ${2:i})"
+	},
+	"Async function": {
+		"prefix": "asf",
+		"body": "async function () {\n\t$1\n}$2"
 	}
 }
