@@ -110,5 +110,15 @@
 			"$2",
 			"// #endregion"
 		]
+	},
+	"Cocos Component": {
+		"prefix": "ccc",
+		"body": [
+			"const {ccclass, property} = cc._decorator;",
+			"\n@ccclass",
+			"export default class ${1:CompName} extends cc.Component {",
+			"\t$2",
+			"}"
+		]
 	}
 }
