@@ -94,5 +94,21 @@
 	"Async function": {
 		"prefix": "asf",
 		"body": "async function () {\n\t$1\n}$2"
+	},
+
+	"Cocos Property": {
+		"prefix": "ccp",
+		"body": [
+			"@property(${1:cc.Node})",
+			"${2:VarName}: ${1:cc.Node} = ${3:null as any};"
+		]
+	},
+	"Region": {
+		"prefix": "#reg",
+		"body": [
+			"// #region ${1: RegionName}",
+			"$2",
+			"// #endregion"
+		]
 	}
 }
