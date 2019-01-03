@@ -106,7 +106,7 @@
 	"Region": {
 		"prefix": "#reg",
 		"body": [
-			"// #region ${1: RegionName}",
+			"// #region ${1:RegionName}",
 			"$2",
 			"// #endregion"
 		]
