@@ -30,6 +30,14 @@
 			"}"
 		]
 	},
+	"New interface": {
+		"prefix": "ei",
+		"body": [
+			"export interface ${1:InterfaceName} {",
+			"\t$2",
+			"}"
+		]
+	},
 	"TSRPC Protocol": {
 		"prefix": "tptl",
 		"body": [
@@ -95,12 +103,11 @@
 		"prefix": "asf",
 		"body": "async function () {\n\t$1\n}$2"
 	},
-
 	"Cocos Property": {
 		"prefix": "ccp",
 		"body": [
-			"@property(${1:cc.Node})",
-			"${2:VarName}: ${1:cc.Node} = ${3:null as any};"
+			"@property(${2:cc.Node})",
+			"${1:VarName}: ${2:cc.Node} = ${3:null as any};"
 		]
 	},
 	"Region": {
@@ -120,5 +127,13 @@
 			"\t$2",
 			"}"
 		]
+	},
+	"Cocos getChildByName": {
+		"prefix": "gc",
+		"body": "getChildByName('$1')$2"
+	},
+	"Cocos getComponent": {
+		"prefix": "gp",
+		"body": "getComponent($1)$2"
 	}
 }
