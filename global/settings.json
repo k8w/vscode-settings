@@ -5,6 +5,7 @@
     "window.zoomLevel": 0,
     "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\cmd.exe",
     "editor.mouseWheelScrollSensitivity": 1.5,
+    "editor.tabSize": 4,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
     "git.enableSmartCommit": true,
@@ -22,5 +23,15 @@
     "tsimporter.lowImportance": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "zenMode.hideTabs": false
+    "zenMode.hideTabs": false,
+    "files.associations": {
+        "*.wxml": "wxml"
+    },
+    "terminal.integrated.scrollback": 5000,
+    "beautify.tabSize": 2,
+    "git.autofetch": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnSave": true,
+    "markdown.preview.breaks": true
 }
