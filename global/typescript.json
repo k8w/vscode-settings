@@ -128,6 +128,30 @@
 			"}"
 		]
 	},
+	"Cocos Option Component": {
+		"prefix": "coc",
+		"body": [
+			"const { ccclass, property } = cc._decorator;",
+			"",
+			"export interface $1Options {",
+			"    $2",
+			"}",
+			"",
+			"@ccclass",
+			"export default class $1 extends cc.Component {",
+			"",
+			"    private _options!: $1Options;",
+			"    public get options(): $1Options {",
+			"        return this._options;",
+			"    }",
+			"    public set options(v: $1Options) {",
+			"        this._options = v;",
+			"        $3",
+			"    }",
+			"",
+			"}"
+		]
+	},
 	"Cocos getChildByName": {
 		"prefix": "gc",
 		"body": "getChildByName('$1')$2"
