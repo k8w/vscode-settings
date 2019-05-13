@@ -167,13 +167,17 @@
 	"ShowDialog": {
 		"prefix": "showDialog",
 		"body": [
-			"${1:private} _cache${2:XXX}Dialog: ${2:XXX}Dialog;",
-			"${1:private} _show${2:XXX}Dialog(options: ${2:XXX}DialogOptions) {",
+			"// #region 显示弹框 ${2:XXX}Dialog",
+			"@property(cc.Prefab)",
+			"prefab${2:XXX}Dialog: cc.Prefab = null as any;",
+			"private _cache${2:XXX}Dialog: ${2:XXX}Dialog;",
+			"private _show${2:XXX}Dialog(options: ${2:XXX}DialogOptions) {",
 			"\tif (!this._cache${2:XXX}Dialog) {",
 			"\t\tthis._cache${2:XXX}Dialog = cc.instantiate(this.prefab${2:XXX}Dialog).getComponent(${2:XXX}Dialog);",
 			"\t}",
 			"\tthis._cache${2:XXX}Dialog.show(options);",
-			"}"
+			"}",
+			"// #endregion"
 		]
 	}
 }
