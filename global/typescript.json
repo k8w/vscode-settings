@@ -159,5 +159,9 @@
 	"Cocos getComponent": {
 		"prefix": "gp",
 		"body": "getComponent($1)$2"
-	}
+	},
+	"Function && Function()": {
+		"prefix": "faf",
+		"body": "$1 && $1($2);"
+	},
 }
