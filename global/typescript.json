@@ -164,4 +164,16 @@
 		"prefix": "faf",
 		"body": "$1 && $1($2);"
 	},
+	"ShowDialog": {
+		"prefix": "showDialog",
+		"body": [
+			"${1:private} _cache${2:XXX}Dialog: ${2:XXX}Dialog;",
+			"${1:private} _show${2:XXX}Dialog(options: ${2:XXX}DialogOptions) {",
+			"\tif (!this._cache${2:XXX}Dialog) {",
+			"\t\tthis._cache${2:XXX}Dialog = cc.instantiate(this.prefab${2:XXX}Dialog).getComponent(${2:XXX}Dialog);",
+			"\t}",
+			"\tthis._cache${2:XXX}Dialog.show(options);",
+			"}"
+		]
+	}
 }
