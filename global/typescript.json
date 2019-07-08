@@ -22,6 +22,14 @@
 			"}"
 		]
 	},
+	"New class": {
+		"prefix": "ec",
+		"body": [
+			"export class ${1:ClassName} {",
+			"\t$2",
+			"}"
+		]
+	},
 	"New default interface": {
 		"prefix": "edi",
 		"body": [
