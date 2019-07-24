@@ -123,5 +123,9 @@
         "key": "f5",
         "command": "-workbench.action.debug.continue",
         "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.clear"
     }
 ]
