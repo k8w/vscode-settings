@@ -10,12 +10,6 @@
     "files.autoSaveDelay": 1000,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "auto-close-tag.activationOnLanguage": [
-        "html",
-        "xml",
-        "javascriptreact",
-        "typescriptreact"
-    ],
     "tsimporter.preferRelative": true,
     "tsimporter.filesToExclude": [
         "dist"
@@ -28,10 +22,39 @@
         "*.wxml": "wxml"
     },
     "terminal.integrated.scrollback": 5000,
-    "beautify.tabSize": 2,
     "git.autofetch": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.formatOnSave": true,
-    "markdown.preview.breaks": true
+    "markdown.preview.breaks": true,
+    "commentAnchors.tags.list": [
+        {
+            "tag": "TODO",
+            "iconColor": "blue",
+            "highlightColor": "#3ea8ff",
+            "backgroundColor": "#0052a5",
+            "scope": "workspace"
+        },
+        {
+            "tag": "BUG",
+            "iconColor": "red",
+            "highlightColor": "#F44336",
+            "backgroundColor": "#592c2c",
+            "scope": "workspace"
+        },
+        {
+            "tag": "TEST",
+            "iconColor": "purple",
+            "highlightColor": "#BA68C8",
+            "backgroundColor": "#48309a",
+            "scope": "file"
+        },
+        {
+            "tag": "@king",
+            "iconColor": "orange",
+            "highlightColor": "#64DD17",
+            "backgroundColor": "#3c7c10",
+            "scope": "workspace"
+        }
+    ]
 }
