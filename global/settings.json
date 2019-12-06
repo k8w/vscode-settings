@@ -44,10 +44,10 @@
         },
         {
             "tag": "TEST",
-            "iconColor": "purple",
+            "iconColor": "yellow",
             "highlightColor": "#BA68C8",
             "backgroundColor": "#48309a",
-            "scope": "file"
+            "scope": "workspace"
         },
         {
             "tag": "@king",
