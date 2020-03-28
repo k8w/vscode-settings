@@ -49,13 +49,15 @@
 	"TSRPC Protocol": {
 		"prefix": "tptl",
 		"body": [
-			"import { BaseRequest } from './BaseRequest';",
-			"import { BaseResponse } from './BaseResponse';\n",
-			"export interface Req${1:PtlName} extends BaseRequest {",
+			"import TsRpcPtl from \"tsrpc-protocol\";\n",
+			"const Ptl${1:PtlName} = new TsRpcPtl<Req${1:PtlName},Res${1:PtlName}>(__filename);",
+			"export default Ptl${1:PtlName};",
+			"",
+			"export interface Req${1:PtlName} {",
 			"\t$2",
 			"}",
 			"",
-			"export interface Res${1:PtlName} extends BaseResponse {",
+			"export interface Res${1:PtlName} {",
 			"\t$3",
 			"}"
 		]
@@ -116,6 +118,13 @@
 			"${1:VarName}: ${2:cc.Node} = ${3:null as any};"
 		]
 	},
+	"Cocos 3D Property": {
+		"prefix": "c3p",
+		"body": [
+			"@property(${2:Node})",
+			"${1:VarName}: ${2:Node} = ${3:null as any};"
+		]
+	},
 	"Region": {
 		"prefix": "#reg",
 		"body": [
@@ -145,6 +154,42 @@
 			"",
 			"@ccclass",
 			"export default class $1 extends cc.Component {",
+			"",
+			"    private _options!: $1Options;",
+			"    public get options(): $1Options {",
+			"        return this._options;",
+			"    }",
+			"    public set options(v: $1Options) {",
+			"        this._options = v;",
+			"        $3",
+			"    }",
+			"",
+			"}"
+		]
+	},
+	"Cocos 3D Component": {
+		"prefix": "c3c",
+		"body": [
+			"import { _decorator, Component } from \"cc\";",
+			"const {ccclass, property} = _decorator;",
+			"\n@ccclass",
+			"export default class ${1:CompName} extends Component {",
+			"\t$2",
+			"}"
+		]
+	},
+	"Cocos 3D Option Component": {
+		"prefix": "c3oc",
+		"body": [
+			"import { _decorator, Component } from \"cc\";",
+			"const { ccclass, property } = _decorator;",
+			"",
+			"export interface $1Options {",
+			"    $2",
+			"}",
+			"",
+			"@ccclass",
+			"export default class $1 extends Component {",
 			"",
 			"    private _options!: $1Options;",
 			"    public get options(): $1Options {",

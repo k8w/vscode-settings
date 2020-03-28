@@ -14,24 +14,24 @@
 		"description": "Log output to console"
 	}
 */
-	"New Component": {
-		"prefix": "xcomp",
+	"React Component": {
+		"prefix": "rcp",
 		"body": [
-			"import * as React from 'react';",
-			"import BaseComponent from 'LongFront/core/BaseComponent';",
+			"import React from 'react';",
+			"import './$1.less';",
 			"",
-			"interface ${1:CompName}Props extends React.Props<any> {",
+			"export interface $1Props extends React.Props<any> {",
 			"\t$2",
 			"}",
 			"",
-			"interface ${1:CompName}State {",
+			"export interface $1State {",
 			"\t$3",
 			"}",
 			"",
-			"export default class ${1:CompName} extends BaseComponent<${1:CompName}Props, ${1:CompName}State>{",
+			"export default class $1 extends React.Component<$1Props, $1State>{",
 			"\trender() {",
 			"\t\treturn (",
-			"\t\t\t<div>$4</div>",
+			"\t\t\t<div className='$1'>$4</div>",
 			"\t\t)",
 			"\t}",
 			"}"
