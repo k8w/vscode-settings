@@ -13,7 +13,7 @@
 		],
 		"description": "Log output to console"
 	}
-*/
+	*/
 	"New default class": {
 		"prefix": "edc",
 		"body": [
@@ -49,15 +49,13 @@
 	"TSRPC Protocol": {
 		"prefix": "tptl",
 		"body": [
-			"import TsRpcPtl from \"tsrpc-protocol\";\n",
-			"const Ptl${1:PtlName} = new TsRpcPtl<Req${1:PtlName},Res${1:PtlName}>(__filename);",
-			"export default Ptl${1:PtlName};",
-			"",
-			"export interface Req${1:PtlName} {",
+			"import { BaseRequest } from './BaseRequest';",
+			"import { BaseResponse } from './BaseResponse';\n",
+			"export interface Req${1:PtlName} extends BaseRequest {",
 			"\t$2",
 			"}",
 			"",
-			"export interface Res${1:PtlName} {",
+			"export interface Res${1:PtlName} extends BaseResponse {",
 			"\t$3",
 			"}"
 		]
