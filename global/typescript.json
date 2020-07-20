@@ -49,15 +49,17 @@
 	"TSRPC Protocol": {
 		"prefix": "tptl",
 		"body": [
-			"import { BaseRequest } from './BaseRequest';",
-			"import { BaseResponse } from './BaseResponse';\n",
+			"import { BaseRequest, BaseResponse, BaseConf } from '../base'",
+			"",
 			"export interface Req${1:PtlName} extends BaseRequest {",
 			"\t$2",
 			"}",
 			"",
 			"export interface Res${1:PtlName} extends BaseResponse {",
 			"\t$3",
-			"}"
+			"}",
+			"",
+			"export const conf: BaseConf = {\n\t$4\n};"
 		]
 	},
 	"TSRPC API": {
@@ -168,7 +170,7 @@
 	"Cocos 3D Component": {
 		"prefix": "c3c",
 		"body": [
-			"import { _decorator, Component } from \"cc\";",
+			"import { _decorator, Component, Node } from \"cc\";",
 			"const {ccclass, property} = _decorator;",
 			"\n@ccclass",
 			"export default class ${1:CompName} extends Component {",
@@ -179,7 +181,7 @@
 	"Cocos 3D Option Component": {
 		"prefix": "c3oc",
 		"body": [
-			"import { _decorator, Component } from \"cc\";",
+			"import { _decorator, Component, Node } from \"cc\";",
 			"const { ccclass, property } = _decorator;",
 			"",
 			"export interface $1Options {",
@@ -227,6 +229,12 @@
 			"\tthis._cache${2:XXX}Dialog.show(options);",
 			"}",
 			"// #endregion"
+		]
+	},
+	"Single line JSDoc comment": {
+		"prefix": "jd",
+		"body": [
+			"/** ${1} */",
 		]
 	}
 }
